@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">CoinGeckoCryptoApp</string>
+    <string name="sort_price">Sort Price</string>
+    <string name="coinname">coinName</string>
+    <string name="coinimage">coinImage</string>
+    <string name="coin_name">Coin Name</string>
+    <string name="coin_description">Coin Description</string>
+    <string name="coin_price">Coin Price</string>
+    <string name="low_price">Low Price</string>
+    <string name="high_price">High Price</string>
+    <string name="api">api</string>
+    <string name="search_coin">Search Coin</string>
 </resources>

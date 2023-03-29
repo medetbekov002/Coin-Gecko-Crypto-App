@@ -1,8 +1,9 @@
-package com.example.coingeckocryptoapp.presentation.coinlist
+package com.example.coingeckocryptoapp.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.coingeckocryptoapp.domain.use_cases.CoinListUseCase
+import com.example.coingeckocryptoapp.presentation.coinlist.CoinListState
 import com.example.coingeckocryptoapp.utils.ResponseState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

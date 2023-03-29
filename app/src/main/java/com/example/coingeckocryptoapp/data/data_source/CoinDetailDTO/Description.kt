@@ -34,5 +34,5 @@ data class Description(
     val uk: String,
     val vi: String,
     val zh: String,
-    val zh-tw: String
+    val tw: String
 )

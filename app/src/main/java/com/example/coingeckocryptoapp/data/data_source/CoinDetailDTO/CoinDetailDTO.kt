@@ -1,5 +1,7 @@
 package com.example.coingeckocryptoapp.data.data_source.CoinDetailDTO
 
+import com.example.coingeckocryptoapp.domain.model.CoinDetail
+
 data class CoinDetailDTO(
     val additional_notices: List<Any>,
     val asset_platform_id: Any,
@@ -34,4 +36,17 @@ data class CoinDetailDTO(
     val status_updates: List<Any>,
     val symbol: String,
     val tickers: List<Ticker>
-)
+){
+    fun toCoinDetail() : CoinDetail {
+        return CoinDetail(
+            name = name,
+            image = image.large,
+            market_cap = market_data.market_cap.usd.toDouble(),
+            price = market_data.current_price.usd.toDouble(),
+            price_percentage_change = market_data.price_change_percentage_24h_in_currency.usd,
+            low_price = market_data.low_24h.usd.toDouble(),
+            high_price = market_data.high_24h.usd.toDouble(),
+            description = description.en
+        )
+    }
+}

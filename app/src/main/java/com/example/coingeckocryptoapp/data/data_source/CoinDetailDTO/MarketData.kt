@@ -32,7 +32,6 @@ data class MarketData(
     val price_change_percentage_200d: Double,
     val price_change_percentage_200d_in_currency: PriceChangePercentage14dInCurrency,
     val price_change_percentage_24h: Double,
-    val price_change_percentage_24h_in_currency: PriceChangePercentage24hInCurrency,
     val price_change_percentage_30d: Double,
     val price_change_percentage_30d_in_currency: PriceChangePercentage14dInCurrency,
     val price_change_percentage_60d: Double,
